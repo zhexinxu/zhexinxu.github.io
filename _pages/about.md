@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Fellow, Harvard Medical School
+subtitle: Postdoctoral Fellow, Harvard Medical School<br><a href="mailto:brian_xu(at)hms.harvard.edu">brian_xu at hms.harvard.edu</a>
 
 profile:
   align: right
   image: prof_pic1.jpg
   image_circular: true # crops the image to make it circular
-  more_info: <p><small>   brian_xu{at}hms.harvard.edu</small></p>
+  more_info: 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -24,9 +24,8 @@ social: false # includes social icons at the bottom of the page
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! I am a postdoctoral researcher in the [Datta Lab](http://datta.hms.harvard.edu/) in the Department of Neurobiology, Harvard Medical School. I completed my PhD in Brain and Cognitive Sciences at the University of Rochester with [Greg DeAngelis](https://www.sas.rochester.edu/bcs/people/faculty/deangelis_greg/index.html), during which I studied how the primate visual system infers 3D scene structure (e.g., motion and depth) during active movements using electrophysiology, psychophysics, and computational models. Before that, I designed wood drilling machines as a Mechanical Engineering major in college. 
+Hi there! I am a postdoctoral fellow in the Department of Neurobiology at Harvard Medical School, working with [Bob Datta](http://datta.hms.harvard.edu/). My research focueses on understanding how the brain coordinates movements in response to environmental demands and internal needs. 
 
-I am interested in the neural mechanisms through which animals coordinate behavior and interact with natural environments. 
+I completed my PhD in Brain and Cognitive Sciences at the University of Rochester with [Greg DeAngelis](https://www.sas.rochester.edu/bcs/people/faculty/deangelis_greg/index.html), where I investigated the neural mechanisms of motion and depth perception during self-motion. Before that, I was trained in mechanical engineering and visual psychophysics.
 
-Besides science, I enjoy swimming, photography, reading, cooking, hiking, and traveling. 
-
+Outside of science, I enjoy bird watching, swimming, photography, and traveling. 

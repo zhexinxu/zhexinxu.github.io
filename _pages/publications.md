@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 
-visit my <u><a href="https://scholar.google.com/citations?user=632LW50AAAAJ&hl=en">Google Scholar</a></u> page for more information.
+see <u><a href="https://scholar.google.com/citations?user=632LW50AAAAJ&hl=en">here</a></u> for more information.
 
 (* indicates equal contribution)
 

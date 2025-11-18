@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
@@ -59,6 +60,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
+        <br>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}

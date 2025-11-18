@@ -8,70 +8,40 @@
   type: time_table
   contents:
     - title: Postdoctoral Fellow
-      institution: Harvard Medical School, Boston, MA
+      institution: Harvard Medical School
       year: 2024-present
-    # - title: Senior Data Scientist Intern 
-    #   institution: IBM, New York, NY
-    #   year: Summer 2022
-    # - title: Graduate Researcher
-    #   institution: University of Rochester, Rochester, NY
-    #   year: 2018-2023
-    # - title: Graduate Researcher
-    #   institution: Institute of Cognitive Neuroscience, East China Normal University, Shanghai, China
-    #   year: 2012-2018
+    - title: Senior Data Scientist Intern 
+      institution: IBM
+      year: Summer 2022
 
 - title: Education
   type: time_table
   contents:
     - title: Ph.D., Brain and Cognitive Sciences
-      institution: University of Rochester, Rochester, NY
+      institution: University of Rochester
       year: 2023
 #     - title: M.S., Cognitive Neuroscience
-#       institution: East China Normal University, Shanghai, China
+#       institution: East China Normal University
 #       year: 2018
 #     - title: B.E., Mechanical Engineering
-#       institution: Tongji University, Shanghai, China
+#       institution: Tongji University
 #       year: 2015
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 2025–2026	
-#       items:
-#       - Y. Eva Tan Postdoctoral Fellowship
-#       - Editorial Fellowship, Psychological Review
-#     - year: 2024-2025	
-#       items:
-#       - Harvard Mahoney Postdoctoral Fellowship
-#     - year: 2022	
-#       items:
-#       - Travel Award, Graduate Student Association, University of Rochester 
-#     - year: 2018-2019
-#       items:
-#       - NSF Research Traineeship, Data-Enabled Science and Engineering, University of Rochester
-#     - year: 2017
-#       items:
-#       - International Travel Grant, East China Normal University
-#       - National Graduate Student Scholarship, East China Normal University
-#     - year: 2010
-#       items:
-#       - First Prize, Chinese Chemistry Olympiad
-
-# - title: Teaching
-#   type: time_table
-#   contents:
-#     - title: Teaching Assistant, Computational and Cognitive Neuroscience Summer School
-#       institution: Cold Spring Harbor Asia, Suzhou, China
-#       year: Summer 2023
-#       description: Designed and led hands-on coding tutorials on neural coding and neural data analysis.
-#     - title: Mentor, Teaching Assistant
-#       institution: Neuromatch Academy
-#       year: 2020-2024
-#       description: Guided small groups of students and postdocs through tutorials and projects in computational neuroscience and deep learning.
-#     - title: Teaching Assistant
-#       institution: University of Rochester, Rochester, NY
-#       year: 2019-2022
-#       description: Assisted in courses on Foundations of Cognitive Science, Sensory and Motor Neuroscience.
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Computational and Cognitive Neuroscience Summer School
+      institution: Cold Spring Harbor Asia
+      year: Summer 2023
+      description: Designed and led hands-on tutorials on neural coding and neural data analysis.
+    - title: Mentor, Teaching Assistant
+      institution: Neuromatch Academy
+      year: 2020-2024
+      description: Guided tutorials and facilitated group projects in computational neuroscience and deep learning.
+    - title: Teaching Assistant
+      institution: University of Rochester
+      year: 2019-2022
+      description: Assisted in courses on Foundations of Cognitive Science, Sensory and Motor Neuroscience.
 
 # - title: Academic Interests
 #   type: nested_list
