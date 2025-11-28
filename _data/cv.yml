@@ -20,12 +20,6 @@
     - title: Ph.D., Brain and Cognitive Sciences
       institution: University of Rochester
       year: 2023
-#     - title: M.S., Cognitive Neuroscience
-#       institution: East China Normal University
-#       year: 2018
-#     - title: B.E., Mechanical Engineering
-#       institution: Tongji University
-#       year: 2015
 
 - title: Teaching
   type: time_table
@@ -34,14 +28,18 @@
       institution: Cold Spring Harbor Asia
       year: Summer 2023
       description: Designed and led hands-on tutorials on neural coding and neural data analysis.
-    - title: Mentor, Teaching Assistant
+    - title: Deep Learning
       institution: Neuromatch Academy
-      year: 2020-2024
-      description: Guided tutorials and facilitated group projects in computational neuroscience and deep learning.
-    - title: Teaching Assistant
+      year: 2021
+      description: Guided tutorials and facilitated group projects during a three-week <a href="https://neuromatch.io/deep-learning-course/">global learning program</a>.
+    - title: Computational  Neuroscience
+      institution: Neuromatch Academy
+      year: 2020
+      description: Guided tutorials and facilitated group projects during a three-week <a href="https://neuromatch.io/computational-neuroscience-course/">global learning program</a>.
+    - title: Foundations of Cognitive Science & Sensory and Motor Neuroscience
       institution: University of Rochester
       year: 2019-2022
-      description: Assisted in courses on Foundations of Cognitive Science, Sensory and Motor Neuroscience.
+      description: Teaching Assistant
 
 # - title: Academic Interests
 #   type: nested_list
