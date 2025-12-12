@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://neuro-xu.github.io/sitemap.xml
+Sitemap: https://zhexinxu.github.io/sitemap.xml

@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "neuro-xu/neuro-xu.github.io",
+    "data-repo": "zhexinxu/zhexinxu.github.io",
     "data-repo-id": "",
     "data-category": "",
     "data-category-id": "",
