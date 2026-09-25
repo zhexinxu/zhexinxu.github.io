@@ -41,6 +41,16 @@
       year: 2019-2022
       description: Teaching Assistant
 
+- title: Service
+  type: time_table
+  contents:
+    - title: Consulting Editor
+      institution: Psychological Review
+      year: 2025-present
+    - title: Reviewer
+      institution: Current Opinion in Neurobiology, PLoS Computational Biology, Vision Research, Neurocomputing, Frontiers in Behavioral Neuroscience, Frontiers in Ecology and Evolution, Frontiers in Systems Biology, Journal of Neuroscience
+      year: 2022-present
+
 # - title: Academic Interests
 #   type: nested_list
 #   contents:
