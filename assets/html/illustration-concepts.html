@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homepage illustration concepts</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+      :root {
+        --paper: #f1f2f7;
+        --ink: #151a2c;
+        --muted: #5a6382;
+        --blue: #3049a8;
+        --violet: #7664d8;
+        --line: #c9cee3;
+        --card: #fbfbfe;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: 'Bricolage Grotesque', sans-serif;
+        margin: 0;
+        padding: 4rem clamp(1.25rem, 5vw, 6rem);
+      }
+      header { margin: 0 auto 3rem; max-width: 1100px; }
+      .eyebrow {
+        color: var(--blue);
+        font: 500 0.72rem 'IBM Plex Mono', monospace;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      h1 { font-size: clamp(2.2rem, 6vw, 4.8rem); letter-spacing: -0.06em; line-height: 0.95; margin: 0.7rem 0 1rem; }
+      header p { color: var(--muted); font-size: 1.1rem; max-width: 42rem; }
+      .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0 auto; max-width: 1100px; }
+      .concept { background: var(--card); border: 1px solid var(--line); border-radius: 1.2rem; overflow: hidden; }
+      .concept-copy { padding: 1.4rem 1.5rem 1.6rem; }
+      .concept h2 { font-size: 1.45rem; margin: 0 0 0.4rem; }
+      .concept p { color: var(--muted); line-height: 1.45; margin: 0; }
+      .concept-number { color: var(--blue); font: 500 0.68rem 'IBM Plex Mono', monospace; letter-spacing: 0.1em; }
+      svg { background: #e8eaf3; display: block; height: auto; width: 100%; }
+      .thin { fill: none; stroke: var(--blue); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+      .faint { fill: none; stroke: var(--line); stroke-linecap: round; stroke-width: 2; }
+      .label { fill: var(--ink); font: 500 13px 'IBM Plex Mono', monospace; letter-spacing: 0.04em; }
+      @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } body { padding-top: 2rem; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">Standalone visual study</div>
+      <h1>Illustrations for perception<br />and natural behavior</h1>
+      <p>Four rendered directions for replacing the current orbit. These are visual prototypes only; none are connected to the site navigation.</p>
+    </header>
+
+    <main class="grid">
+      <article class="concept">
+        <svg viewBox="0 0 640 360" role="img" aria-labelledby="contour-title">
+          <title id="contour-title">Illusory contour: an implied triangle formed by four blue disks</title>
+          <rect width="640" height="360" fill="#e8eaf3" />
+          <circle cx="230" cy="115" r="54" fill="#3049a8" />
+          <circle cx="410" cy="115" r="54" fill="#3049a8" />
+          <circle cx="230" cy="270" r="54" fill="#3049a8" />
+          <circle cx="410" cy="270" r="54" fill="#3049a8" />
+          <path d="M320 105 L407 255 L233 255 Z" fill="#e8eaf3" />
+          <path class="thin" d="M320 105 L407 255 L233 255 Z" opacity=".8" />
+          <text class="label" x="320" y="48" text-anchor="middle">PERCEPTION</text>
+          <text class="label" x="320" y="330" text-anchor="middle" opacity=".65">the brain completes what is missing</text>
+        </svg>
+        <div class="concept-copy">
+          <div class="concept-number">01 / ILLUSORY CONTOUR</div>
+          <h2>The brain completes the world</h2>
+          <p>Incomplete forms create a clear object through negative space, making perception itself the illustration.</p>
+        </div>
+      </article>
+
+      <article class="concept">
+        <svg viewBox="0 0 640 360" role="img" aria-labelledby="explore-title">
+          <title id="explore-title">Exploration behavior: a branching path through environmental cues</title>
+          <rect width="640" height="360" fill="#e8eaf3" />
+          <path class="faint" d="M70 315 C130 260 112 205 190 185 S290 225 340 155 S470 95 570 55" />
+          <path class="faint" d="M190 185 C240 130 250 85 300 55" />
+          <path class="faint" d="M340 155 C410 190 450 225 510 250" />
+          <path class="thin" d="M70 315 C130 260 112 205 190 185 S290 225 340 155 S470 95 570 55" />
+          <circle cx="70" cy="315" r="13" fill="#3049a8" />
+          <circle cx="190" cy="185" r="9" fill="#7664d8" />
+          <circle cx="340" cy="155" r="9" fill="#7664d8" />
+          <circle cx="570" cy="55" r="13" fill="#3049a8" />
+          <path d="M300 55 l-12 6 l7 9" class="thin" />
+          <path d="M510 250 l-12-1 l5-10" class="thin" />
+          <circle cx="300" cy="55" r="6" fill="#151a2c" /><circle cx="510" cy="250" r="6" fill="#151a2c" />
+          <text class="label" x="70" y="345" text-anchor="middle">ORIENT</text>
+          <text class="label" x="300" y="35" text-anchor="middle">EXPLORE</text>
+          <text class="label" x="570" y="35" text-anchor="middle">APPROACH</text>
+        </svg>
+        <div class="concept-copy">
+          <div class="concept-number">02 / EXPLORATION BEHAVIOR</div>
+          <h2>Behavior is a path through possibility</h2>
+          <p>A continuous trajectory branches around cues in the environment, showing action as active sampling.</p>
+        </div>
+      </article>
+
+      <article class="concept">
+        <svg viewBox="0 0 640 360" role="img" aria-labelledby="world-title">
+          <title id="world-title">Natural world: an animal in a layered sensory environment</title>
+          <rect width="640" height="360" fill="#e8eaf3" />
+          <path class="faint" d="M0 255 Q100 220 195 255 T390 255 T640 250" />
+          <path class="faint" d="M0 285 Q120 245 220 285 T430 280 T640 275" />
+          <path class="thin" d="M0 310 Q145 265 270 310 T500 300 T640 305" />
+          <path class="thin" d="M120 255 q8-58 16 0 M130 255 q18-75 30 0 M500 278 q8-65 15 0 M510 278 q22-88 35 0" />
+          <path d="M295 250 q12-35 42-32 q20 2 25 20 l26 4 l-9 13 l-25-4 q-18 28-52 11 l-18 8z" fill="#3049a8" />
+          <circle cx="346" cy="227" r="3" fill="#e8eaf3" />
+          <path class="thin" d="M350 175 C420 140 470 155 525 120 M350 188 C420 170 470 190 545 170 M350 200 C420 200 480 220 530 215" opacity=".75" />
+          <text class="label" x="460" y="105">SENSORY WORLD</text>
+          <text class="label" x="320" y="345" text-anchor="middle">behavior in context</text>
+        </svg>
+        <div class="concept-copy">
+          <div class="concept-number">03 / NATURAL WORLD</div>
+          <h2>An animal is never out of context</h2>
+          <p>Layered contours, environmental signals, and an animal silhouette place behavior inside a living world.</p>
+        </div>
+      </article>
+
+      <article class="concept">
+        <svg viewBox="0 0 640 360" role="img" aria-labelledby="loop-title">
+          <title id="loop-title">Perception action loop: sense, interpret, act, learn</title>
+          <rect width="640" height="360" fill="#e8eaf3" />
+          <circle cx="320" cy="180" r="66" fill="#3049a8" />
+          <text x="320" y="174" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono" font-size="13">NATURAL</text>
+          <text x="320" y="193" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono" font-size="13">BEHAVIOR</text>
+          <path class="thin" d="M320 62 C455 62 520 115 520 180" />
+          <path class="thin" d="M520 180 C520 275 430 298 320 298" />
+          <path class="thin" d="M320 298 C195 298 120 250 120 180" />
+          <path class="thin" d="M120 180 C120 100 190 62 320 62" />
+          <path d="M512 174 l8 6 l-8 6 M326 290 l-7 8 l-7-8 M128 186 l-8-6 l8-6 M314 70 l7-8 l7 8" fill="none" stroke="#3049a8" stroke-width="2" />
+          <text class="label" x="320" y="35" text-anchor="middle">SENSE</text>
+          <text class="label" x="565" y="185" text-anchor="middle">INTERPRET</text>
+          <text class="label" x="320" y="333" text-anchor="middle">LEARN</text>
+          <text class="label" x="75" y="185" text-anchor="middle">ACT</text>
+        </svg>
+        <div class="concept-copy">
+          <div class="concept-number">04 / PERCEPTION–ACTION</div>
+          <h2>Sensation becomes behavior</h2>
+          <p>A continuous loop connects sensory input, neural interpretation, action, and learning.</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

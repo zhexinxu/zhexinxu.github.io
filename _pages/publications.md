@@ -8,9 +8,7 @@ nav_order: 3
 ---
 
 
-See <u><a href="https://scholar.google.com/citations?user=632LW50AAAAJ&hl=en">here</a></u> for more information.
-
-(* = equal contribution)
+* = equal contribution. See <u><a href="https://scholar.google.com/citations?user=632LW50AAAAJ&hl=en">my Google Scholar</a></u> for more information.
 
 <!-- {% include bib_search.liquid %} -->
 

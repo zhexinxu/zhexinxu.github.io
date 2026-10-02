@@ -42,6 +42,289 @@ body.sticky-bottom-footer {
 
 // TODO: redefine content layout.
 
+.home-page {
+  .post-header {
+    margin-bottom: 0;
+  }
+}
+
+.home-hero {
+  align-items: center;
+  background: var(--global-bg-color);
+  border: 0;
+  border-radius: 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  position: relative;
+}
+
+.home-sections {
+  background: var(--global-bg-color);
+  position: relative;
+}
+
+.home-intro {
+  padding: clamp(2rem, 5vw, 4.5rem);
+  position: relative;
+}
+
+.home-intro .clearfix {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  line-height: 1.65;
+}
+
+.home-hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.home-eyebrow {
+  color: var(--global-theme-color);
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.home-hero .post-title {
+  font-size: clamp(2.4rem, 5vw, 4.25rem);
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+}
+
+.home-hero .desc {
+  color: var(--global-text-color-light);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  margin-bottom: 0;
+  max-width: 36rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.home-action {
+  align-items: center;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  color: var(--global-theme-color);
+  display: inline-flex;
+  font-weight: 700;
+  height: 2.8rem;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--global-code-bg-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+
+  &.primary {
+    background: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+
+    &:hover,
+    &:focus-visible {
+      background: var(--global-hover-color);
+      color: var(--global-hover-text-color);
+    }
+  }
+}
+
+.home-icon-action {
+  align-items: center;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 2.8rem;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  width: 2.8rem;
+}
+
+.home-profile {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 220px;
+
+  img {
+    border: 4px solid var(--global-card-bg-color);
+    box-shadow: 0 0 0 1px var(--global-divider-color), 0 18px 34px color-mix(in srgb, var(--global-text-color) 14%, transparent);
+    max-width: 220px;
+    width: 100%;
+  }
+}
+
+.research-orbit {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  margin: 0;
+  padding: 5rem clamp(2rem, 5vw, 4.5rem);
+  position: relative;
+}
+
+.research-orbit-intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.research-orbit-intro > p:not(.orbit-detail) {
+  color: var(--global-text-color-light);
+  max-width: 34rem;
+}
+
+.orbit-detail {
+  color: var(--global-theme-color) !important;
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  block-size: 3.2em;
+  max-width: 32rem;
+  overflow: hidden;
+}
+
+.orbit-map {
+  aspect-ratio: 1;
+  max-width: 440px;
+  min-height: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.orbit-core,
+.orbit-node {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+}
+
+.orbit-core {
+  background: radial-gradient(circle at 35% 30%, var(--global-hover-color), var(--global-theme-color) 62%);
+  box-shadow: 0 0 0 12px color-mix(in srgb, var(--global-theme-color) 10%, transparent),
+    0 12px 30px color-mix(in srgb, var(--global-theme-color) 22%, transparent);
+  color: var(--global-hover-text-color);
+  height: 34%;
+  left: 33%;
+  top: 33%;
+  width: 34%;
+  z-index: 2;
+}
+
+.orbit-core span { color: inherit; font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; }
+
+.orbit-node {
+  appearance: none;
+  background: color-mix(in srgb, var(--global-card-bg-color) 88%, var(--global-theme-color));
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 35%, var(--global-divider-color));
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--global-text-color) 8%, transparent);
+  color: var(--global-text-color);
+  cursor: pointer;
+  height: 25%;
+  padding: 0.5rem;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  width: 25%;
+  z-index: 3;
+
+  strong { color: inherit; font-size: clamp(0.9rem, 1.8vw, 1.1rem); line-height: 1.05; }
+
+  &:hover,
+  &:focus-visible {
+    background: var(--global-theme-color);
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--global-theme-color) 14%, transparent),
+      0 14px 28px color-mix(in srgb, var(--global-theme-color) 22%, transparent);
+    color: var(--global-hover-text-color);
+    outline: none;
+    transform: scale(1.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 5px;
+  }
+}
+
+.node-flow { left: 0; top: 8%; }
+.node-depth { right: 0; top: 38%; }
+.node-search { bottom: 0; left: 38%; }
+
+.orbit-line {
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 28%, var(--global-divider-color));
+  border-radius: 48% 52% 44% 56% / 53% 45% 55% 47%;
+  inset: 13% 12% 15% 16%;
+  opacity: 0.8;
+  position: absolute;
+  transform: rotate(-18deg) scaleX(1.3);
+}
+
+.orbit-line-two {
+  border-style: dashed;
+  border-radius: 57% 43% 52% 48% / 45% 56% 44% 55%;
+  inset: 24% 22% 26% 25%;
+  transform: rotate(54deg) scaleX(1.38);
+}
+
+.home-publications {
+  padding: 5rem clamp(2rem, 5vw, 4.5rem);
+  position: relative;
+
+  &::before {
+    top: 3rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-hero,
+  .research-orbit {
+    grid-template-columns: 1fr;
+  }
+
+  .home-profile {
+    min-height: 180px;
+
+    img {
+      max-width: 180px;
+    }
+  }
+
+  .orbit-map {
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-action { transition: none; }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/

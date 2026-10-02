@@ -19,6 +19,50 @@ table.table-cv {
   font-weight: 400;
 }
 
+.cv .list-group-item .badge {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  min-width: 88px !important;
+  padding: 0.45rem 0.7rem;
+}
+
+.cv .badge {
+  background-color: transparent !important;
+  color: var(--global-text-color) !important;
+}
+
+.cv .card .list-group-item .badge {
+  background-color: transparent !important;
+  color: var(--global-text-color) !important;
+}
+
+.cv .card {
+  background-color: transparent !important;
+  border: 0;
+  box-shadow: none;
+}
+
+.cv .card .list-group-item {
+  border: 0 !important;
+}
+
+.cv .date-label {
+  color: var(--global-theme-color);
+  display: inline-block;
+  text-align: left;
+  font-family: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.3;
+  min-width: 75px;
+  padding: 0.45rem 0.7rem;
+}
+
+.cv-publications {
+  font-family: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif;
+  margin-top: 3rem;
+}
+
 a.btncv {
   color: var(--global-text-color) !important;
   border: 1px solid var(--global-text-color) !important;
@@ -40,6 +84,109 @@ a.btncv:hover {
   color: var(--global-theme-color) !important;
   border-color: var(--global-theme-color) !important;
   text-decoration: none !important;
+}
+
+.cv-print-button {
+  background: transparent;
+  border: 0;
+  color: var(--global-text-color);
+  cursor: pointer;
+  font-size: 0.85em;
+  padding: 0;
+}
+
+.cv-print-button:hover,
+.cv-print-button:focus-visible {
+  color: var(--global-theme-color);
+}
+
+.cv-print-name {
+  display: none;
+}
+
+@media print {
+  html,
+  body,
+  .post,
+  .post *,
+  .cv,
+  .cv *,
+  .card,
+  .cv .card {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  .post *,
+  .post-title,
+  .post-title *,
+  .cv-publications,
+  .cv-publications * {
+    color: #111 !important;
+  }
+
+  .navbar,
+  footer,
+  .post-header .cv-print-button,
+  .toc,
+  .side-bar,
+  #toc-sidebar,
+  .container .row > .col-sm-3 {
+    display: none !important;
+  }
+
+  .container .row > .col-sm-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cv-print-name {
+    display: inline;
+  }
+
+  .cv .date-label,
+  .cv-publications,
+  .cv-publications * {
+    font-family: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif !important;
+  }
+
+  .cv .card {
+    break-inside: avoid;
+    margin: 0 0 1.5rem !important;
+    padding: 0 !important;
+  }
+
+  .cv .card,
+  .cv .card .list-group-item,
+  .cv-publications li {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .cv .date-column,
+  .cv .text-center {
+    text-align: left !important;
+  }
+
+  .cv i,
+  .cv .iconlocation,
+  .cv .iconinstitution,
+  .cv .icondepartment {
+    display: none !important;
+  }
+
+  .cv table,
+  .cv tbody,
+  .cv tr,
+  .cv td {
+    background: #fff !important;
+    border: 0 !important;
+  }
 }
 
 /*****************************

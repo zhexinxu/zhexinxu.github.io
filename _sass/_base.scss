@@ -269,6 +269,19 @@ ul.task-list input[type="checkbox"] {
   padding-block: 0.7rem;
 }
 
+body.fixed-top-nav {
+  overflow-y: scroll;
+}
+
+body.fixed-top-nav #navbar {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -322,9 +335,14 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  .navbar-nav > .nav-item {
+    min-width: 5.75rem;
+    text-align: center;
+  }
+
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--global-theme-color);
 
     &:hover {

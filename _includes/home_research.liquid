@@ -1,0 +1,43 @@
+<section class="research-orbit" aria-labelledby="research-orbit-title">
+  <div class="research-orbit-intro">
+    <p class="home-eyebrow">RESEARCH THEMES</p>
+    <h2 id="research-orbit-title">How does the brain organize natural behavior?</h2>
+    <p>My work asks how perception, neural circuits, and internal needs shape the way animals move through the world.</p>
+    <p class="orbit-detail" id="orbit-detail" aria-live="polite"></p>
+  </div>
+  <div class="orbit-map" role="list" aria-label="Research themes">
+    <div class="orbit-line orbit-line-one"></div>
+    <div class="orbit-line orbit-line-two"></div>
+    <div class="orbit-core" role="listitem">
+      <span>natural behavior</span>
+    </div>
+    <button class="orbit-node node-flow" type="button" role="listitem" data-detail="How animals sense affordances, cues, and changes in the world around them.">
+      <strong>sensory worlds</strong>
+    </button>
+    <button class="orbit-node node-depth" type="button" role="listitem" data-detail="How neural systems transform sensation into flexible, context-sensitive action.">
+      <strong>neural circuits</strong>
+    </button>
+    <button class="orbit-node node-search" type="button" role="listitem" data-detail="How internal state and motivation tune what an animal notices and does next.">
+      <strong>internal needs</strong>
+    </button>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const orbit = document.querySelector('.research-orbit');
+    if (!orbit) return;
+    const detail = orbit.querySelector('#orbit-detail');
+    const nodes = [...orbit.querySelectorAll('.orbit-node')];
+
+    const showDetail = (node) => { detail.textContent = node.dataset.detail; };
+    const clearDetail = () => { detail.textContent = ''; };
+
+    nodes.forEach((node) => {
+      node.addEventListener('pointerenter', () => showDetail(node));
+      node.addEventListener('pointerleave', clearDetail);
+      node.addEventListener('focus', () => showDetail(node));
+      node.addEventListener('blur', clearDetail);
+    });
+  })();
+</script>
