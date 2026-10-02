@@ -15,6 +15,10 @@ table.table-cv {
   }
 }
 
+.cv .list-group-item h6.title {
+  font-weight: 400;
+}
+
 a.btncv {
   color: var(--global-text-color) !important;
   border: 1px solid var(--global-text-color) !important;

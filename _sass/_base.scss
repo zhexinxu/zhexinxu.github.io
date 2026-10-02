@@ -262,10 +262,11 @@ ul.task-list input[type="checkbox"] {
 // Navbar customization
 
 .navbar {
-  box-shadow: none;
+  box-shadow: 0 1px 0 rgba(11, 16, 32, 0.04);
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 0.98;
+  padding-block: 0.7rem;
 }
 
 .navbar .dropdown-menu {
@@ -303,19 +304,27 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: 'Bricolage Grotesque', 'Avenir Next', 'Segoe UI', sans-serif;
+    font-weight: 800;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-family: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    border-radius: 8px;
+    padding-inline: 0.75rem;
+    text-transform: uppercase;
 
     &:hover {
       color: var(--global-hover-color);
+      background-color: var(--global-code-bg-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 700;
     color: var(--global-theme-color);
 
     &:hover {
@@ -796,7 +805,12 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+
+      .periodical em {
+        font-style: normal;
       }
 
       .author {
@@ -828,8 +842,8 @@ footer.sticky-bottom {
 
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
@@ -837,8 +851,8 @@ footer.sticky-bottom {
           margin-left: 0;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-hover-color);
+            border-color: var(--global-hover-color);
           }
         }
         a.award.btn {

@@ -48,6 +48,12 @@ img { max-width: 100%; }
 }
 body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--f-body); }
 .wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+.site-nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 54px; }
+.site-nav .brand { color: var(--fg); font: 800 20px/1 var(--f-display); text-decoration: none; }
+.site-nav ul { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.site-nav a:not(.brand) { color: var(--fg); font: 400 15px/1 var(--f-body); padding: 9px 12px; border-radius: 8px; text-decoration: none; text-transform: uppercase; }
+.site-nav a[aria-current="page"] { font-weight: 700; }
+.site-nav a:not(.brand):hover, .site-nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
 header { display: grid; gap: 10px; margin-bottom: 26px; max-width: 64ch; }
 .eyebrow { font: 500 13px/1.4 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0; }
 h1 { font: 800 clamp(40px, 6vw, 68px)/1.0 var(--f-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
@@ -123,6 +129,14 @@ h2 { font: 700 24px/1.2 var(--f-display); margin: 0 0 14px; letter-spacing: -0.0
 </head>
 <body>
 <div class="wrap">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="/">Zhexin Brian Xu</a>
+    <ul>
+      <li><a href="/" aria-current="page">HOME</a></li>
+      <li><a href="/publications/">PUBLICATIONS</a></li>
+      <li><a href="/cv/">CV</a></li>
+    </ul>
+  </nav>
   <header>
     <p class="eyebrow">Video abstract · 5 min · eLife</p>
     <h1>Which way is up?</h1>
