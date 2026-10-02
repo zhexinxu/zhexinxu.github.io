@@ -14,7 +14,7 @@ See <u><a href="https://scholar.google.com/citations?user=632LW50AAAAJ&hl=en">he
 
 <!-- {% include bib_search.liquid %} -->
 
-<div class="Publications">
+<div class="publications">
 
 {% bibliography %}
 

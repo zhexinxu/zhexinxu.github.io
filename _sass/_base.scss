@@ -17,10 +17,24 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  // font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  // font-family: 'Georgia', 'Times New Roman', Times, serif;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  // font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bricolage Grotesque', 'Avenir Next', 'Segoe UI', sans-serif;
+  font-weight: 800;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
 }
 
 hr {
