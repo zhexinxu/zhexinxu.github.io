@@ -57,7 +57,7 @@ body.sticky-bottom-footer {
   gap: 2rem;
   grid-template-columns: minmax(0, 1fr) 220px;
   overflow: hidden;
-  padding: clamp(2rem, 5vw, 4.5rem);
+  padding-block: clamp(2rem, 5vw, 4.5rem);
   position: relative;
 }
 
@@ -67,7 +67,7 @@ body.sticky-bottom-footer {
 }
 
 .home-intro {
-  padding: clamp(2rem, 5vw, 4.5rem);
+  padding-block: clamp(2rem, 5vw, 4.5rem);
   position: relative;
 }
 
@@ -178,7 +178,7 @@ body.sticky-bottom-footer {
   gap: 3rem;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
   margin: 0;
-  padding: 5rem clamp(2rem, 5vw, 4.5rem);
+  padding-block: 5rem;
   position: relative;
 }
 
@@ -290,7 +290,7 @@ body.sticky-bottom-footer {
 }
 
 .home-publications {
-  padding: 5rem clamp(2rem, 5vw, 4.5rem);
+  padding-block: 5rem;
   position: relative;
 
   &::before {
